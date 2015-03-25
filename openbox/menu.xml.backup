@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Запуск программы">
+			<action name="Execute">
+				<command>
+					gmrun
+				</command>
+			</action>
+		</item>
+		<separator/>
+		<item label="Терминал">
+			<action name="Execute">
+				<command>
+					terminator
+				</command>
+			</action>
+		</item>
+		<item label="Веб браузер">
+			<action name="Execute">
+				<command>
+					firefox-esr
+				</command>
+			</action>
+		</item>
+		<item label="Менеджер файлов">
+			<action name="Execute">
+				<command>
+					pcmanfm
+				</command>
+			</action>
+		</item>
+		<item label="Текстовый редактор">
+			<action name="Execute">
+				<command>
+					medit
+				</command>
+			</action>
+		</item>
+		<item label="Видеоплеер">
+			<action name="Execute">
+				<command>
+					vlc
+				</command>
+			</action>
+		</item>
+		<separator/>
+		<menu id="wine" label="Wine">
+		     <item label="Конфигурация Wine">
+				<action name="Execute">
+					<command>
+						winecfg
+					</command>
+				</action>
+			</item>
+			<item label="Консоль Wine">
+				<action name="Execute">
+					<command>
+						wineconsole
+					</command>
+				</action>
+			</item>
+			<item label="Winetricks">
+				<action name="Execute">
+					<command>
+						winetricks --gui
+					</command>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="accessories" label="Дополнительно">
+		    <item label="Поиск файлов Catfish">
+				<action name="Execute">
+					<command>
+						catfish
+					</command>
+				</action>
+			</item>
+		    <item label="Менеджер архивов">
+				<action name="Execute">
+					<command>
+						file-roller
+					</command>
+				</action>
+			</item>
+			<item label="Менеджер процессов (htop)">
+				<action name="Execute">
+					<command>
+					terminator -e=&quot;htop&quot;
+					</command>
+				</action>
+			</item>
+			<item label="Терминал">
+				<action name="Execute">
+					<command>
+						terminator
+					</command>
+				</action>
+			</item>
+			<item label="Менеджер файлов Nautilus">
+				<action name="Execute">
+					<command>
+						nautilus
+					</command>
+				</action>
+			</item>
+			<item label="Менеджер файлов Thunar">
+				<action name="Execute">
+					<command>
+						thunar
+					</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="Games" label="Игры">
+		<item label="Steam">
+				<action name="Execute">
+					<command>
+						steam
+					</command>
+				</action>
+			</item>
+			<item label="desura">
+				<action name="Execute">
+					<command>
+						desura
+					</command>
+				</action>
+			</item>
+			<item label="Playonlinux">
+				<action name="Execute">
+					<command>
+						playonlinux
+					</command>
+				</action>
+			</item>
+			<item label="Super Tux Cart">
+				<action name="Execute">
+					<command>
+						supertuxcart
+					</command>
+				</action>
+			</item>
+			<item label="Space Invaders">
+				<action name="Execute">
+					<command>
+						pivaders
+					</command>
+				</action>
+			</item>
+			<item label="Xonotic">
+				<action name="Execute">
+					<command>
+						xonotic
+					</command>
+				</action>
+			</item>
+			<item label="Angry Birds Star Wars">
+				<action name="Execute">
+					<command>
+						wine /home/w1nner/.wine/drive_c/Games/Angry_Birds_Star_Wars/AngryBirdsStarWars.exe
+					</command>
+				</action>
+			</item>
+			<item label="Pacman">
+				<action name="Execute">
+					<command>
+						xpacman
+					</command>
+				</action>
+			</item>
+			<item label="Battlefield 2">
+				<action name="Execute">
+					<command>
+						wine /home/w1nner/.wine/drive_c/Program\ Files\ (x86)/Battlefield\ 2/BF2.exe
+					</command>
+				</action>
+			</item>
+		      <item label="Quake">
+				<action name="Execute">
+					<command>
+						quake3
+					</command>
+				</action>
+			</item>
+			<item label="OpenArena">
+				<action name="Execute">
+					<command>
+						openarena
+					</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="engeneer" label="Инженерия">
+		<item label="Компас 3D">
+				<action name="Execute">
+					<command>
+						wine /home/w1nner/.wine/drive_c/Program\ Files\ (x86)/ASCON/KOMPAS-3D\ LT\ V12/Bin/KOMPASLT.Exe
+					</command>
+				</action>
+			</item>
+			</menu>
+		<menu id="tools" label="Инструменты">
+		      <item label="GParted">
+				<action name="Execute">
+					<command>
+						terminator --command=&quot;sudo gparted&quot;
+					</command>
+				</action>
+		      </item>
+		      <item label="Keepass">
+				<action name="Execute">
+					<command>
+						keepass
+					</command>
+				</action>
+			</item>
+		      <item label="VirtualBox">
+				<action name="Execute">
+					<command>
+						virtualbox
+					</command>
+				</action>
+			</item>
+			<item label="Crossover">
+				<action name="Execute">
+					<command>
+						python3.4 /opt/cxoffice/bin/crossover
+					</command>
+				</action>
+			</item>
+			<item label="QEMU">
+				<action name="Execute">
+					<command>
+						qemu-launcher
+					</command>
+				</action>
+			</item>
+			<item label="Airoscrip-ng">
+				<action name="Execute">
+					<command>
+						sudo /bin/bash /usr/local/sbin/airoscript-ng /share/airoscript-ng/autopwn
+					</command>
+				</action>
+			</item>
+			<item label="Менеджер архивов">
+				<action name="Execute">
+					<command>
+						file-roller
+					</command>
+				</action>
+			</item>
+			<item label="Matrix">
+				<action name="Execute">
+					<command>
+						terminator --command="cmatrix"
+					</command>
+				</action>
+			</item>
+			<item label="Qcad">
+				<action name="Execute">
+					<command>
+						gksudo /root/opt/qcad-3.3.2-linux-x86_32/qcad
+					</command>
+				</action>
+			</item>
+			<item label="Терминал Sakura">
+				<action name="Execute">
+					<command>
+						sakura
+					</command>
+				</action>
+			</item>
+			<item label="Запись экрана">
+				<action name="Execute">
+					<command>
+						simplescreenrecorder
+					</command>
+				</action>
+			</item>
+			<item label="Midnight Commander">
+				<action name="Execute">
+					<command>
+						mc
+					</command>
+				</action>
+			</item>
+			<item label="Wireshark">
+				<action name="Execute">
+					<command>
+						wireshark
+					</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="multimedia" label="Мультимедиа">
+		    <item label="Медиаплеер VLC">
+				<action name="Execute">
+					<command>
+						vlc
+					</command>
+				</action>
+			</item>
+		    <item label="Аудиоплеер Clementine">
+				<action name="Execute">
+					<command>
+						clementine
+					</command>
+				</action>
+			</item>
+			<item label="Видеоредатор Openshot">
+				<action name="Execute">
+					<command>
+						openshot
+					</command>
+				</action>
+			</item>
+			<item label="Медиацентр XBMC">
+				<action name="Execute">
+					<command>
+						xbmc
+					</command>
+				</action>
+			</item>
+			<item label="Видеоредактор Pitivi">
+				<action name="Execute">
+					<command>
+						pitivi
+					</command>
+				</action>
+			</item>
+			<item label="Запись дисков">
+				<action name="Execute">
+					<command>
+						k3b
+					</command>
+				</action>
+			</item>
+			<item label="Аудиоплеер Deadbeef">
+				<action name="Execute">
+					<command>
+						deadbeef
+					</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="network" label="Интернет">
+			<item label="Qbittorrent">
+				<action name="Execute">
+					<command>
+						qbittorrent
+					</command>
+				</action>
+			</item>
+			<item label="Почта">
+				<action name="Execute">
+					<command>
+						thunderbird
+					</command>
+				</action>
+			</item>
+			<item label="Закачка файлов">
+			<action name="Execute">
+				<command>
+					kget
+				</command>
+			</action>
+			</item>
+			<item label="Pidgin">
+			<action name="Execute">
+				<command>
+					pidgin
+				</command>
+			</action>
+			</item>
+			<item label="Luakit">
+				<action name="Execute">
+					<command>
+						luakit
+					</command>
+				</action>
+			</item>
+			<item label="Tor">
+				<action name="Execute">
+					<command>
+						tor-browser-en
+					</command>
+				</action>
+			</item>
+			<item label="Seamonkey">
+				<action name="Execute">
+					<command>
+						seamonkey
+					</command>
+				</action>
+			</item>
+			<item label="Skype">
+				<action name="Execute">
+					<command>
+						skype
+					</command>
+				</action>
+			</item>
+			<item label="Ekiga">
+				<action name="Execute">
+					<command>
+						ekiga
+					</command>
+				</action>
+			</item>
+			<item label="Linphone">
+				<action name="Execute">
+					<command>
+						linphone
+					</command>
+				</action>
+			</item>
+			<item label="Deluge">
+				<action name="Execute">
+					<command>
+						deluge
+					</command>
+				</action>
+			</item>
+			<item label="IRC-клиент XChat">
+				<action name="Execute">
+					<command>
+						xchat
+					</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="Development" label="Разработка">
+		     <item label="Веб редактор Bluefish">
+				<action name="Execute">
+					<command>
+						bluefish
+					</command>
+				</action>
+			</item>
+			<item label="Консоль Python">
+				<action name="Execute">
+					<command>
+						pycrust
+					</command>
+				</action>
+			</item>
+			<item label="XRCed">
+				<action name="Execute">
+					<command>
+						xrced
+					</command>
+				</action>
+			</item>
+			<item label="Среда разработки Netbeans">
+				<action name="Execute">
+					<command>
+						netbeans
+					</command>
+				</action>
+			</item>
+			<item label="Редактор Emacs">
+				<action name="Execute">
+					<command>
+						emacs
+					</command>
+				</action>
+			</item>
+			<item label="Редактор vim">
+				<action name="Execute">
+					<command>
+						vim.tiny
+					</command>
+				</action>
+			</item>
+			<item label="Среда разработки Eclipse">
+				<action name="Execute">
+					<command>
+						eclipse
+					</command>
+				</action>
+			</item>
+			<item label="Среда разработки Geany">
+				<action name="Execute">
+					<command>
+						geany
+					</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="Graphics" label="Графика">
+      <item label="GIMP">
+				<action name="Execute">
+					<command>
+						gimp
+					</command>
+				</action>
+			</item>
+			<item label="LibreCAD">
+				<action name="Execute">
+					<command>
+						librecad
+					</command>
+				</action>
+			</item>
+			<item label="OpenSCAD">
+				<action name="Execute">
+					<command>
+						openscad
+					</command>
+				</action>
+			</item>
+			<item label="Менеджер фото Shotwell">
+				<action name="Execute">
+					<command>
+						shotwell
+					</command>
+				</action>
+			</item>
+			<item label="Просмотрщик Mirage">
+				<action name="Execute">
+					<command>
+						mirage
+					</command>
+				</action>
+			</item>
+			<item label="3D редактор Blender">
+				<action name="Execute">
+					<command>
+						blender
+					</command>
+				</action>
+			</item>
+		    <item label="Просмотрщик Viewnior">
+				<action name="Execute">
+					<command>
+						viewnior
+					</command>
+				</action>
+			</item>
+			</menu>
+		<menu id="office" label="Офис">
+		<item label="LibreOffice">
+				<action name="Execute">
+					<command>
+						libreoffice
+					</command>
+				</action>
+			</item>
+			<item label="Microsoft Word 2007">
+				<action name="Execute">
+					<command>
+						wine /home/w1nner/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.exe
+					</command>
+				</action>
+			</item>
+			<item label="Microsoft PowerPoint 2007">
+				<action name="Execute">
+					<command>
+						wine /home/w1nner/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.exe
+					</command>
+				</action>
+			</item>
+			<item label="Текстовый процессор AbiWord">
+				<action name="Execute">
+					<command>
+						abiword
+					</command>
+				</action>
+			</item>
+			<item label="Быстрые заметки">
+				<action name="Execute">
+					<command>
+						gnote
+					</command>
+				</action>
+			</item>
+			<item label="Gnumeric Spreadsheet">
+				<action name="Execute">
+					<command>
+						gnumeric
+					</command>
+				</action>
+			</item>
+			<item label="Калькулятор">
+				<action name="Execute">
+					<command>
+						galculator
+					</command>
+				</action>
+			</item>
+			<item label="PDF-просмотр">
+				<action name="Execute">
+					<command>
+						evince
+					</command>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="settings" label="Конфиги">
+				<item label=".conkyrc">
+					<action name="Execute">
+						<command>
+							medit ~/.conkyrc
+						</command>
+					</action>
+				</item>
+				<item label="dmenu">
+					<action name="Execute">
+						<command>
+							medit ~/.config/dmenu/dmenu-bind.sh
+						</command>
+					</action>
+				</item>
+				<item label="gmrun">
+					<action name="Execute">
+						<command>
+							medit ~/.gmrunrc
+						</command>
+					</action>
+				</item>
+				<item label="Терминатор">
+					<action name="Execute">
+						<command>
+							medit ~/.config/terminator/config
+						</command>
+					</action>
+				</item>
+				<menu id="tint2" label="Tint2">
+				<item label="Конфиг">
+					<action name="Execute">
+						<command>
+							medit ~/.config/tint2/tint2rc
+						</command>
+					</action>
+				</item>
+				<item label="Tint2 GUI tool">
+					<action name="Execute">
+						<command>
+							tint2conf
+						</command>
+					</action>
+				</item>
+				<item label="Перезапуск">
+					<action name="Execute">
+						<command>
+							tint2restart
+						</command>
+					</action>
+				</item>
+				</menu>		
+		</menu>
+		<menu id="system" label="Система">
+			<item label="User Login Settings">
+				<action name="Execute">
+					<command>
+						terminator --command=&quot;sudo slimconf&quot;
+					</command>
+				</action>
+			</item>
+			<item label="zswap">
+				<action name="Execute">
+					<command>
+						ssx sh ~/Документы/zswap_enable.sh
+					</command>
+				</action>
+			</item>
+			<item label="NVIDIA">
+				<action name="Execute">
+					<command>
+						nvidia-settings
+					</command>
+				</action>
+			</item>
+			<item label="Внешний вид">
+				<action name="Execute">
+					<command>
+						lxappearance
+					</command>
+				</action>
+			</item>
+			<item label="Cтандартные приложения">
+				<action name="Execute">
+					<command>
+						terminator --command="sudo update-alternatives --all"
+					</command>
+				</action>
+			</item>
+			<item label="Менеджер питания">
+				<action name="Execute">
+					<command>
+						xfce4-power-manager-settings
+					</command>
+				</action>
+			</item>
+			<item label="Хранитель экрана">
+				<action name="Execute">
+					<command>
+						xscreensaver-demo
+					</command>
+				</action>
+			</item>
+			<item label="Выбрать обои">
+				<action name="Execute">
+					<command>
+						nitrogen /home/w1nner/Изображения/Wallpapers/Wall
+					</command>
+				</action>
+			</item>
+		</menu>
+		<!--<menu id="help" label="Help" execute="cb-help-pipemenu" />-->
+		<separator/>
+		<menu id="obConfig" label="Openbox">
+				<item label="Перезапуск">
+					<action name="Restart"/>
+				</item>
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<command>
+							medit ~/.config/openbox/menu.xml
+						</command>
+					</action>
+				</item>
+				<item label="Правка rc.xml">
+					<action name="Execute">
+						<command>
+							medit ~/.config/openbox/rc.xml
+						</command>
+					</action>
+				</item>
+				<item label="Автозапуск">
+					<action name="Execute">
+						<command>
+							medit ~/.config/openbox/autostart
+						</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="GUI Menu Editor">
+					<action name="Execute">
+						<command>
+							obmenu
+						</command>
+					</action>
+				</item>
+				<item label="GUI Applications Settings Editor">
+					<action name="Execute">
+						<command>
+							obapps
+						</command>
+					</action>
+				</item>
+				<item label="GUI Config Tool">
+					<action name="Execute">
+						<command>
+							obconf
+						</command>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<item label="ARandR">
+				    <action name="Execute">
+					    <command>
+						    arandr
+					    </command>
+				    </action>
+			    </item>
+			    <separator/>
+			<item label="Windows XP">
+				    <action name="Execute">
+					    <command>
+						    vboxmanage startvm "XP"
+					    </command>
+				    </action>
+			    </item>
+			<separator/>
+		<item label="Выход">
+			<action name="Execute">
+				<command>
+					oblogout
+				</command>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
